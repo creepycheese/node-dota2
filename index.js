@@ -319,7 +319,7 @@ handlers[Dota2.schema.EGCBaseClientMsg.k_EMsgGCClientWelcome] = function clientW
 
     // Parse any caches
     this._gcReady = true;
-    this._handleWelcomeCaches(message);
+    // this._handleWelcomeCaches(message);
     this.emit("ready");
 };
 
