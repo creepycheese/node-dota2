@@ -105,10 +105,10 @@ function handleSubscribedType(obj_type, object_data, isDelete) {
             break;
         // Party invite snapshot.
         case cacheTypeIDs.CSODOTAPartyInvite:
-            var party = Dota2.schema.CSODOTAPartyInvite.decode(object_data[0]);
-            this.Logger.debug("Received party invite snapshot for group ID " + party.group_id);
-            this.emit("partyInviteUpdate", party);
-            this.PartyInvite = party;
+            //var party = Dota2.schema.CSODOTAPartyInvite.decode(object_data[0]);
+            //this.Logger.debug("Received party invite snapshot for group ID " + party.group_id);
+            //this.emit("partyInviteUpdate", party);
+            //this.PartyInvite = party;
             break;
         default:
             this.Logger.warn("Unhandled cache ID: " + obj_type);
